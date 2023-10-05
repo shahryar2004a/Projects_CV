@@ -1,0 +1,43 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(107, 137, 237);
+    font-family:"Trirong",serif;
+}
+.container{
+    width: 600px;
+    height: 360px;
+    background-color: rgb(107, 137, 237);
+    margin:100px auto;
+    box-shadow: 0 0 40px rgb(40,40,40); 
+    border-radius:10px 25px 10px 25px;
+    position: relative;
+}
+.card{
+     width: 220px;
+     height:360px;
+     position: absolute;
+     right:30px;
+     top: -30px;
+     box-shadow: 0 0 40px rgb(40,40,40); 
+     border-radius:10px 25px 10px 25px;
+     overflow: hidden;
+}
+.pic{
+    width: 100%;
+}
+.bio{
+    width: 300px;
+    height:300px;
+    position: absolute;
+    left:30px;
+    top:30px;
+}
+.card p{
+    padding-right: 5px;
+   
+}

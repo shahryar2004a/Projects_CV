@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Shippori Antique', sans-serif;
+        }
+        .header{
+            width: 100%;
+            height: 100vh;
+            background-image: url("pic/header.jpg");
+            background-size: cover;
+            background-position: center;
+            
+        }
+        .header::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100vh;
+            backdrop-filter:grayscale(100%);
+        }
+     
+        .navbar-list{
+            list-style: none;
+            font-size: 20px;
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0.89), rgba(171, 127, 80, 0.89));
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+            margin: 0 auto;
+              padding: 10px;
+              border-bottom-left-radius: 10px;
+              border-bottom-right-radius: 10px;
+            
+        }
+        .nav-item{
+            color: #FFF;
+            cursor: pointer;
+            z-index: 1;
+        }
+
+
+        .texts{
+             color:#FFF;
+             width:40%;
+              height: 400px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              margin-top: 140px;
+             margin-left: 50px;
+        }
+   
+    
+        .btn{
+            width: 150px;
+            height: 54px;
+            border: 1px solid white;
+            border-radius: 10px;
+            background-color: rgba(171, 127, 80, 0.89);
+            color: white;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgba(148, 111, 71, 0.89);
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+   <nav class="navbar">
+       <ul class="navbar-list">
+           <li class="nav-item">Home</li>
+           <li class="nav-item">Account</li>
+           <li class="nav-item">Services</li>
+           <li class="nav-item">Login</li>
+       </ul>
+   </nav>
+   <div class="texts">
+       <h1 class="header_title">From Past To Present</h1>
+       <p class="paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quibusdam tenetur voluptates dolores et molestiae ipsam quis sunt hic assumenda? Totam neque asperiores deserunt dignissimos doloremque, labore repudiandae veritatis eaque
+        ex rerum et quibusdam veniam impedit enim accusantium esse. Maiores tenetur eveniet impedit? Nihil voluptates deleniti nemo ipsam ad iure.
+    </p>
+    <button class="btn">Get Started</button>
+   </div>
+</header>    
+</body>
+</html>

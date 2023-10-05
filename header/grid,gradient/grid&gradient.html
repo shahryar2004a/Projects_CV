@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Be+Vietnam+Pro:wght@500&family=Dancing+Script&family=Shadows+Into+Light&family=Source+Sans+Pro:wght@600&family=Vujahday+Script&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            background-color: red;
+            height: 100vh;
+        }
+        .header{
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: 100vh;
+        }
+        .left{
+            background-color: green;
+           grid-column: 1/4;
+           background-image: url("pictuer/1.jpg");
+           background-size: cover;
+           background-position: center;
+        }
+        .right{
+            background-color: #222121;
+            grid-column: 4/7;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(5,1fr);
+        }
+        .text{
+            
+            position:absolute;
+            text-align: center;
+            font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            top: 40%;
+            left: 44%;
+            background: linear-gradient(to right,#202020 45% , #cac8c8 30%);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color: transparent;
+        }
+        .wellcome{
+            font-family: 'Dancing Script', cursive;
+            grid-column: 3/4;
+            grid-row: 2/3;
+            color: #ffffff;
+        }
+        .paragraph{
+            font-family: 'Dancing Script', cursive;
+            grid-column:3/5 ;
+            grid-row: 3/4;
+            color: #ffffff;
+        }
+        .btn{
+            grid-column:3/4;
+            grid-row: 4/5;
+            align-self: center;
+            padding: 9px;
+            background-color:rgb(44, 44, 252);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.4s;
+        }
+        .btn:hover{
+         background-color: white;
+         color: rgb(44, 44, 252);;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text">CrativeHeader<br> Design</h1>
+        <div class="header">
+            <div class="left"></div>
+            <div class="right">
+               <h1 class="wellcome">Wellcome</h1>
+                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex doloremque possimus voluptatibus impedit magni, consequatur ipsam explicabo at aspernatur natus voluptatum nulla, quaerat earum eum. Cumque corrupti repellendus facilis quas nulla, illo sed mollitia nam libero! Tempore harum impedit earum.
+                </p>
+            <button class="btn">get started</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

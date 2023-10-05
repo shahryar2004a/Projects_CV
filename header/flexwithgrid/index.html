@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .header{
+            width: 100%;
+            height: 90vh;
+            background-image: url("pics/header.jpg");
+            background-size: cover;
+            background-position: center;
+            display: grid;
+            grid-template-columns: repeat(8,1fr);
+            grid-template-rows: 1fr;
+        }
+        .left{
+            background-color: rgba(0, 0, 0, 0.9);
+            grid-column: 1/6;
+        }
+        .container{
+      
+            width: 95%;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .top{
+       
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo{  
+            font-size: 38px;
+            color: #FFFF;
+        }
+        .top ul{
+            list-style: none;
+            display: flex;
+            width: 60%;
+            justify-content: space-between;
+        }
+        .top ul li a{
+            font-size: 18px;
+            text-decoration: none;
+            color: rgb(211, 211, 211);
+        }
+        .content{
+        
+            display: flex;
+            height: 80vh;
+            margin-top: 20px;
+        }
+        .left-content{
+            width: 25%;
+            color: #FFFF;
+        }
+        .title{
+         font-size: 24px;
+         color: #FFFF;
+        }
+        .sub-title{
+            height: 25%;
+            width: 400px;
+           transform: rotate(-90deg);
+             margin-left: -130px;
+             margin-top: 150px;
+             font-size: 14px;
+        }
+        .right-content{
+            width: 75%;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(3,1fr);
+            color: #FFFF;
+        }
+        .right-content h1{
+             grid-column: 2/5;
+             align-self: center;
+        }
+        .right-content p{
+            grid-column: 2/5;
+        }
+        .images{
+            grid-column: 2/5;
+            display: flex;
+            justify-content: space-between;
+            align-content: center;
+        }
+        img{
+            width: 90px;
+            height: 90px;
+            clip-path: circle(50%);
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <div class="container">
+                <div class="top">
+                    <h1 class="logo">Sofa.</h1>
+                    <ul>
+                        <li>
+                        <a href="">Home</a>
+                    </li>
+                        <li>
+                            <a href="">Purches</a>
+                        </li>
+                        <li>
+                            <a href="">Product</a>
+                        </li>
+                        <li>
+                            <a href="">Login</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="content">
+                    <div class="left-content">
+                        <h2 class="title">Find Best Sofa and Furniture here</h2>
+                        <p class="sub-title">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, corrupti!
+                        </p>
+                    </div>
+                    <div class="right-content">
+                        <h1>Make your home beautiful</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem sed totam consequatur. Cumque impedit voluptatum eius animi et! Doloremque cupiditate et nihil. Pariatur temporibus esse voluptas, excepturi consequuntur doloremque mollitia maiores, atque voluptatum qui amet adipisci sequi. Ipsum, provident!
+                        </p>
+                        <div class="images">
+                            <img src="pics/sofa.jpg" alt="">
+                            <img src="pics/header.jpg" alt="">
+                            <img src="pics/sofa.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Byekan';
+    src: url('../fonts/Byekan.ttf') format('truetype'),
+         url('../fonts/Byekan.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'lalehzar';
+    src: url('../fonts/lalezar.ttf') format('truetype'),
+          url('../fonts/lalezar.woff') format('woff');
+}
+body{
+    font-family: Byekan;
+}
+.header{
+    height: 550px;
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 35px;
+    text-align: center;
+}
+.header .nav-list{
+    list-style-type: none;
+}
+.header .nav-list .nav-item{
+    display: inline-block;
+     padding: 15px;
+} 
+.header .nav-list .nav-item:hover{
+    color: orange;
+}
+.header h1{
+    font-size: 60px;
+    font-family: lalehzar;
+    margin-top: 90px;
+}
+.header h1 span{
+    color: orange;
+}
+.header .desc{
+    margin: auto;
+    width: 450px;
+    height: 55px;
+    line-height: 55px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: 30px;
+}
+
+
+/*  بخش اعضای شرکت */
+
+.members{
+      padding: 50px 30px;
+      text-align: center;
+}
+.member-list{
+    list-style-type: none;
+    margin-top: 25px;
+}
+.member-item{
+    width: 350px;
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 0 0 15px #bbbbbb;
+}
+.member-pic{
+    width: 100%;
+}
+.member-name{
+    font-size: 25px;
+    margin-top: 5px;
+}
+.member-bio{
+    padding: 20px;
+    text-align: justify;
+   font-size: 20px;
+}
+
+/*  بخش درباره شرکت */
+
+.about{
+    height: 700px;
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    background-color: #373837;
+    background-blend-mode: multiply;
+    padding-top: 50px;
+}
+.circle{
+    width:600px;
+    height:600px;
+    background-color: rgba(135, 135, 135, 0.3);
+    margin: auto;
+    border-radius: 50%;
+    text-align: center;
+    padding: 100px 120px;
+   color: white;
+   
+}
+.circle p{
+    margin-top: 40px;
+    text-align: justify;
+}
+.circle h2{
+    font-size: 35px;
+}
+
+
+/*  بخش پاصفحه شرکت */
+
+
+.footer{
+    background-color: gray;
+    margin: 50px 0px;
+    text-align: center;
+    font-family:lalehzar;
+    font-size: 25px;
+}
+.footer img{
+    padding: 10px;
+}

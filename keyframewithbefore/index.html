@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+    <style>
+      *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .Media{
+            width: 50%;
+            margin: 5rem auto;      
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+        }
+        .icon-box{
+            width: 110px;
+            height: 110px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 2px 5px 4px 2px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            color: #3ee60b;
+            position: relative;
+            overflow: hidden;
+        }
+        .icon-box::before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #3ee60b;
+            top:-100px;
+            right: -80px;
+        }
+        .icon-box:hover:before{
+            animation: MoveToBottom 1s forwards;
+        }
+        .icon-box .fab{
+            line-height: 110px;
+            font-size: 40px;
+            transition: all 0.5s;
+        }
+        .icon-box:hover .fab{
+            color: white;
+            transform: scale(1.1);
+        }
+        @keyframes MoveToBottom{
+            0%{
+             top:-100px;
+            right: -80px;
+            }
+            70%{ 
+             top:20px;
+            right: 20px;
+            }
+            100%{
+                top:0;
+            right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="Media">
+        <div class="icon-box">
+           <i class="fab fa-telegram"></i>
+        </div>
+        <div class="icon-box">
+            <i class="fab fa-twitter"></i>
+        </div>
+        <div class="icon-box">
+            <i class="fab fa-instagram"></i>
+        </div>
+        <div class="icon-box">
+            <i class="fab fa-facebook-f"></i>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+     *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+     }
+     body {
+    font-family: 'Exo 2', sans-serif;
+     }
+     .header{
+         height: 90vh;
+         display: flex;
+        background-image: linear-gradient(to top,rgb(255, 69, 0) 10%, rgb(255, 165, 0) 50%);
+     }
+     .left{
+         background-color: black;
+         color: white;
+         width: 50%;
+         clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 0 100%, 0% 50%, 0 0);
+         display: flex;
+         align-items: center;
+     }
+    .text-box{
+        width: 70%;
+        height: 60vh;
+        margin-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .title{
+        font-size: 42px;
+        animation: MakeBig 1s ease-out;
+    }
+    .sub-title{
+        font-size: 52px;
+        animation: MakeBig 2s ease-out;
+    }
+    .text{
+        animation: MakeBig 3s ease-out;
+    }
+    .color-text{
+        color: orange;
+    }
+     .right{
+      background-color: red;
+      width: 50%;
+      background-image: url("pic/1.jpg");
+      background-size: cover;
+      clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+     }
+
+     @keyframes MakeBig{
+         0%{
+           opacity: 0;
+           transform: scale(0.5);
+           
+         }
+         100%{
+             opacity: 1;
+       transform: scale(1);
+         }
+     }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+          <div class="text-box">
+              <h1 class="title">Place <span class="color-text">Place</span>!</h1>
+               <h2 class="sub-title"><span class="color-text">Find Every</span> Place<span class="color-text"> You Want</span></h2>
+               <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, facilis illum! Porro facilis totam aspernatur, sequi vero repellat vitae quia repellendus cumque quos, delectus atque libero laborum magni nam sunt!</p>
+          </div>
+        </div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+        font-family: 'Shippori Antique', sans-serif;
+    }
+    .header{
+        background-color: rgb(77, 76, 76);
+        height: 100vh;
+    }
+    .container{
+      
+        padding: 0 100px;
+    }
+    .container::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100%;
+        backdrop-filter: blur(10px);
+    }
+    .navbar{
+    
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     padding: 20px 100px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+    }
+    .logo{
+        color: #FFFFFF;
+        font-size: 28px;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .navbar_list{
+        position: relative;
+        display: flex;
+    }
+    .navbar_list li{
+        list-style-type: none;
+        margin: 0 25px;
+    }
+    .navbar_list li a{
+        text-decoration: none;
+        font-size: 18px;
+        color: #FFFFFF;
+        position:relative;
+        transition: all 0.4s;
+        padding: 5px 8px;
+    }
+    .navbar_list li a:hover{
+        background-color: white;
+        color: black;
+        border-radius: 5px;
+    }
+    .videoBox{
+        width: 100%;
+        height: 100%;
+    }
+    .videoBox video{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .texts{
+
+        color: #FFFFFF;
+        width: 40%;
+        position: absolute;
+        top: 25%;
+    }
+    .title{
+        font-size: 48px;
+        margin-bottom: 25px;
+    }
+    .paragraph{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .btn{
+       width: 140px;
+       height: 54px;
+       border: none;
+       border-radius: 5px;
+       background-color: rgba(255, 255, 255, 0.4);
+       color: #FFFFFF;
+       cursor: pointer;
+       transition: all 0.4s;
+    }
+    .btn:hover{
+        background-color: #FFFFFF;
+        color: black;
+    }
+    </style>
+</head>
+<body>
+        <section class="header">
+            <div class="videoBox">
+                <video autoplay muted loop>
+                    <source src="header.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="container">
+                <nav class="navbar">
+                    <a class="logo" href="#">City</a>
+                    <ul class="navbar_list">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Service</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="texts">
+                    <div class="text-box">
+                        <h1 class="title">City Lights</h1>
+                        <p class="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio dicta quo eaque ullam ipsa odit in maxime ad ratione iure quam non corporis itaque accusantium aliquam quia deserunt necessitatibus voluptatum, autem cumque natus fugit
+                            reprehenderit nam consectetur? Mollitia, veniam corrupti?
+                        </p>
+                        <button class="btn">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+</body>
+</html>

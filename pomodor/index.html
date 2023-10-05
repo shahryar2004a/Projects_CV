@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Be+Vietnam+Pro:wght@500&family=Dancing+Script&family=Inter:wght@500;600;700&family=Shadows+Into+Light&family=Source+Sans+Pro:wght@600&family=Vujahday+Script&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+    <style>
+         *{
+             padding: 0;
+             margin: 0;
+             box-sizing: border-box;
+
+         }
+         body{
+            font-family: 'Inter', sans-serif;
+             color: white;
+         }
+         .back-color-dark{
+            background-color: #111;
+         }
+         .text-color-darkmagenta{
+           color:#543EF6;
+         }
+         .container{
+             background-color: gray;
+             height: 120vh;
+             display: grid;
+            grid-template-columns: repeat(20,1fr);
+            grid-template-rows: repeat(10,1fr);
+         }
+         .menu{
+               grid-row: 1/11;
+               grid-column: 1/5;
+               border-right: 1px solid white;
+               display: grid;
+               grid-template-columns: repeat(10,1fr);
+               grid-template-rows: repeat(10,1fr);
+         }
+         .logo{
+              
+              text-align: center;
+              padding-top: 10% ;
+              font-size: 30px;
+              grid-row: 2/3;
+              grid-column: 3/8;
+              cursor: pointer;
+         }
+         .menu-links{
+         
+            grid-row: 3/9;
+            grid-column: 1/11;        
+             display: grid;
+             grid-template-columns: repeat(10,1fr);
+             grid-template-rows: repeat(10,1fr);
+             font-family: 'Inter', sans-serif;
+         }
+         .link:hover{
+            background-color: rgb(43, 43, 43);
+            cursor: pointer;
+         }
+        .timer{
+
+         grid-column: 1/11;
+          grid-row: 2/3;
+          display: flex;
+          justify-content:center;
+        }
+        .icon{
+            color: gray;
+         margin-right: 30px;
+         
+          font-size: 25px;
+        }
+        .text{
+         
+         padding-top:5px ;
+        }
+        .stats{
+   
+            grid-column: 1/11;
+            grid-row: 4/5;
+            display: flex;
+            justify-content:center;
+        }
+        .settigs{
+           
+            grid-column: 1/11;
+            grid-row: 6/7;
+            display: flex;
+            justify-content:center;
+        }
+        .Darkmode{
+           
+            grid-column: 1/11;
+            grid-row: 9/10;
+            display: flex;
+            justify-content:center;
+            
+        }
+        .main{
+           grid-row:1/11;
+           grid-column: 5/21;
+            display: grid;
+            grid-template-columns: repeat(20,1fr);
+            grid-template-rows: repeat(20,1fr);
+        }
+        .wi-fi{
+            grid-column: 1/21;
+            grid-row: 2/3;
+            align-self: center;
+            display: flex;
+            justify-content: flex-end;
+            margin-right: 30px;
+        }
+        .wi-fi_log{
+          font-size: 20px;
+        }
+        .add{
+            grid-column: 9/12;
+            grid-row: 3/4;
+           display: flex;
+           justify-content: space-between;
+           border: 1px solid gray;
+           border-radius: 5px;
+          align-items: center;
+          margin-left: 30px;
+          cursor: pointer;
+          font-family: 'Inter', sans-serif;
+        }
+
+        .add:hover{
+            background-color: rgb(43, 43, 43);
+        }
+        .fa-plus-circle{
+            font-size: 20px;
+        }
+        .add-logo,.add-text{
+            
+            font-size: 12px;
+             font-weight: bold;
+             padding: 5px;
+
+        }
+        .circle{
+            background-color: rgb(105, 33, 240);
+            height: 300px;
+            width: 300px;
+            grid-column: 8/15;
+            grid-row: 4/14;
+            clip-path: circle(50% at 50% 50%);
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(10,1fr);
+            grid-template-rows: repeat(10,1fr);
+            justify-content: center;
+            align-content: center;
+        }
+        .circle-in{
+            z-index: 1;
+            clip-path: circle(50% at 50% 50%);
+           text-align: center;
+           grid-column: 2/10;
+           grid-row: 2/10;
+           font-family: 'Inter', sans-serif;
+        }
+        .circle-in_timer{
+             margin-top: 35%;
+             font-size: 60px;
+        }
+        .circle-in_text{
+             font-weight: bold;
+        }
+        .player-box{
+        
+            grid-column: 7/15;
+            grid-row: 13/15;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+               
+        }
+        
+        .btn_refresh{
+              width: 50px;
+              height: 50px;
+              clip-path: circle(50% at 50% 50%);
+              border: 1px solid gray;
+            border-radius: 60%;
+            cursor: pointer;
+        }
+        .btn_play{
+          
+            width: 70px;
+            height: 70px;
+            clip-path: circle(50% at 50% 50%);
+            margin-left: 24px;
+            margin-right: 24px;
+            border: 1px solid rgb(89, 0, 255);
+            border-radius: 60%;
+            cursor: pointer;
+            text-align: center;
+        }
+        .fa-play{
+         margin: 25px;
+         font-size: 20px;
+         color: #543EF6;
+        }
+        .fa-sync-alt{
+            margin: 16px;
+            color: rgb(83, 81, 81);
+        }
+        .fa-step-forward{
+            margin: 16px;
+        
+        }
+        .btn_next{
+          
+            width: 50px;
+            height: 50px;
+            clip-path: circle(50% at 50% 50%);
+            border: 1px solid gray;
+            border-radius: 60%;
+            cursor: pointer;
+        }
+        .part-of{
+             grid-column: 10/12;
+             grid-row: 16/17;
+             text-align: center;
+             padding-top: 10px;
+             font-weight: bold;
+        }
+        .sessions{
+             grid-column: 10/12;
+             grid-row: 17/18;
+             text-align: center;
+                font-weight: bold;
+        }
+        .footer{
+           
+            grid-column: 1/21;
+            grid-row: 18/21;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-content: center;
+        }
+        .footer_title{
+             text-align: center;
+        }
+        .footer_title_text{
+        
+        }
+    
+        .btn_button{
+            background-color: yellow;
+            display: flex;
+           width: 150px;
+           height: 30px;
+          margin: 0px auto;
+          border-radius: 5px;
+        }
+        .btn_logo{
+        color: #111;
+          width: 20%;
+         height: inherit;
+         text-align: center;
+      padding-top: 5px;
+        }
+        .btn_text{
+            color: #111;
+            height: inherit;
+            width: 80%;
+            padding: 8px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .footer_links{
+             display: flex;
+             justify-content: center;
+        }
+        .twitter{
+             
+        }
+        .github{
+        
+
+        }
+     
+    </style>
+</head>
+<body>
+     <div class="container">
+         <div class="menu back-color-dark">
+             <div class="logo text-color-darkmagenta">pomodor</div>
+               <div class="menu-links">
+             <div class="timer link">
+                 <div class="timer-icon icon"><i class="fas fa-clock"></i></div>
+                 <div class="timer-text text">Timer</div>
+            </div>
+                 <div class="stats link">
+                    <div class="stats-icon icon"><i class="fas fa-calendar-week"></i></div>
+                    <div class="stats-text text">Stats</div>
+                </div>
+                <div class="settigs link">
+                    <div class="settigs-icon icon"><i class="fas fa-cog"></i></div>
+                    <div class="settigs-text text">Settigs</div>
+                </div>
+                <div id="dark_mode" class="Darkmode link">
+                    <div class="Darkmode-icon icon"><i class="fas fa-moon"></i></div>
+                    <div class="Darkmode-text text">Dark mode</div>
+                </div>
+             </div>
+            </div>
+         <div class="main back-color-dark">
+             <div class="wi-fi">
+                 <div class="wi-fi_log"><i class="fas fa-wifi"></i></div>
+             </div>
+             <div class="add">
+                 <div class="add-logo text-color-darkmagenta"><i class="fas fa-plus-circle"></i></div>
+                 <div class="add-text text-color-darkmagenta"><p>ADD LABEL</p></div>
+             </div>
+             <div class="circle">
+             <div class="circle-in back-color-dark">
+                <h1 class="circle-in_timer">25:00</h1>
+                <p class="circle-in_text">FOCUS</p>
+            </div>
+             </div>
+              <div class="player-box">
+                <div class="btn_refresh"><i class="fas fa-sync-alt"></i></div>
+                <div class="btn_play"><i class="fas fa-play"></i></div>
+                <div class="btn_next"><i class="fas fa-step-forward"></i></div>
+              </div>
+              <div class="part-of"><p>1 of 4</p></div>
+              <div class="sessions">sessions</div>
+              <div class="footer">
+                <div class="footer_title">
+                    <p class="footer_title_text">Made with love by Sasha Drmic</p>
+                </div>
+             
+                    <div class="btn_button">
+                 <div class="btn_logo">
+                      AA
+                    </div>
+                    <p class="btn_text">Buy me a coffee</p> 
+                    </div>
+                <div class="footer_links">
+                    <div class="twitter">twitter</div>
+                    <div class="github">github</div>
+                </div>
+        </div>
+     
+     </div>
+   <script src="script.js"></script>
+</body>
+</html>

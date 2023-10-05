@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: sans-serif;
+        }
+        .header{
+            width: 100%;
+            height: 90vh;
+        }
+        .header-video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: inherit;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .title{
+            background-color: rgba(0, 0, 0, 0.9);
+            color: white;
+            width: 60%;
+            height: 100%;
+            mix-blend-mode: multiply;
+            z-index: 1;
+        }
+        .header-title{
+            font-size: 64px;
+            width: 40%;
+            margin-bottom: 20px;
+            position: absolute;
+            top: 10%;
+            left: 5%;
+        }
+        .paragraph{
+            font-size: 48px;
+            width: 50%;
+            position: absolute;
+            left: 5%;
+            top: 25%;
+        }
+        .btn{
+          width: 140px;
+          height: 54px;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+          position: absolute;
+          left: 5%;
+          top: 55%;
+          border: 0;
+          border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+     <div class="header">
+         <video class="header-video" autoplay muted loop>
+             <source src="header.mp4" type="video/mp4">
+         </video>
+         <div class="title">
+            <h1 class="header-title">This is Header</h1>
+            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, asperiores?</p>
+            <button class="btn">Discover Now!</button>
+         </div>
+     </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap" rel="stylesheet">
+    <style>
+       *{
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+       }
+      body{
+        font-family: 'Exo 2', sans-serif;
+      }
+       .header{
+           height: 90vh;
+           border: 1px solid rgb(179, 4, 4);
+       }
+       .shape{ 
+           background-color: rgb(179, 4, 4);
+           width: 400px;
+           height: 90vh;
+           clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+           position: absolute;
+           right: 10%;
+       }
+        .circle{
+            width: 400px;
+            height: 400px;
+            clip-path: circle(50% at 50% 50%);
+            position: absolute;
+            right: 10%;
+            top: 20%;
+            background-image: url("pic/company.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+        .text-box{
+            position: absolute;
+            width: 30%;
+            left: 5%;
+            top: 20%;
+        }
+        .title{
+            font-size: 50px;
+        }
+        .sub-text{
+            margin-top: 10px;
+            font-size: 18px;
+         color: rgb(107, 107, 107);
+        }
+        .color-text{
+            color:rgb(179, 4, 4);
+        }
+        .media{
+            margin-top: 15px;
+          font-size: 24px;
+         
+        }
+        .fa{
+            padding: 8px;
+            color:rgb(179, 4, 4);
+        }
+    </style>
+</head>
+<body>
+    <div class="header"> 
+        <div class="text-box">
+            <h1 class="title">We Are <br><span class="color-text"> CREATIVE </span><br> Designer</h1>
+            <p class="sub-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem sit, eveniet vitae suscipit quas ipsum repellendus eos consectetur dignissimos illo quos unde non voluptatum esse consequatur maiores, asperiores sequi mollitia nobis exercitationem, molestias officia. Dolores deleniti modi exercitationem nemo incidunt!</p>
+            <div class="media">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-telegram"></i>
+                <i class="fa fa-github"></i>
+
+            </div>
+        </div>
+        <div class="shape"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+</html>
